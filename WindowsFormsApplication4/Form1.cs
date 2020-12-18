@@ -29,24 +29,31 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (textBoxInput.Text == "")
             {
-                MessageBox.Show("Tolong isi text box terlebih dahulu");
+                MessageBox.Show("Tolong isi textbox terlebih dahulu!");
             }
             else
             {
-                string text = textBox1.Text;
+                string text = textBoxInput.Text;
                 char[] reverse = text.ToCharArray();
                 Array.Reverse(reverse);
                 string hasil = new string(reverse);
-                output.Text = hasil;
+                labelOutput.Text = hasil;
             }
            
         }
 
         private void urutkan_Click(object sender, EventArgs e)
         {
-            char[] urutkan = Text.ToCharArray();
+            if (textBoxInput.Text == "")
+            {
+                MessageBox.Show("Tolong isi textbox terlebih dahulu!");
+            }
+            else
+            {
+                char[] urutkan = Text.ToCharArray();
+            }
            
         }
 

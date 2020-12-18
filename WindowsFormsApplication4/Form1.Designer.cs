@@ -31,9 +31,9 @@
             this.reverse = new System.Windows.Forms.Button();
             this.urutkan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.output = new System.Windows.Forms.Label();
+            this.labelOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // reverse
@@ -64,12 +64,12 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 2;
             // 
-            // textBox1
+            // textBoxInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxInput.Location = new System.Drawing.Point(69, 47);
+            this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.Size = new System.Drawing.Size(323, 20);
+            this.textBoxInput.TabIndex = 3;
             // 
             // label2
             // 
@@ -82,25 +82,25 @@
             this.label2.Text = "Input";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // output
+            // labelOutput
             // 
-            this.output.AutoSize = true;
-            this.output.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output.Location = new System.Drawing.Point(78, 202);
-            this.output.Name = "output";
-            this.output.Size = new System.Drawing.Size(46, 16);
-            this.output.TabIndex = 5;
-            this.output.Text = "Output";
-            this.output.Click += new System.EventHandler(this.label3_Click);
+            this.labelOutput.AutoSize = true;
+            this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOutput.Location = new System.Drawing.Point(78, 202);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(46, 16);
+            this.labelOutput.TabIndex = 5;
+            this.labelOutput.Text = "Output";
+            this.labelOutput.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 261);
-            this.Controls.Add(this.output);
+            this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.urutkan);
             this.Controls.Add(this.reverse);
@@ -116,9 +116,9 @@
         private System.Windows.Forms.Button reverse;
         private System.Windows.Forms.Button urutkan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxInput;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label output;
+        private System.Windows.Forms.Label labelOutput;
     }
 }
 
